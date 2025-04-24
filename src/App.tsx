@@ -5,7 +5,7 @@ import { historicalData } from './data/historical-data';
 
 const App: React.FC = () => (
   <div className="container mx-auto px-4 py-8">
-    <h1 className="text-3xl font-bold mb-6 text-center">Historical References to Bulgars</h1>
+    <h1 className="text-3xl font-bold mb-6 text-center">Historical References to Bulgars from ancient sources</h1>
     {historicalData.map((entry, index) => (
       <HistoricalEntryComponent key={index} entry={entry} />
     ))}

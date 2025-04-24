@@ -1,16 +1,50 @@
 // src/data/historicalData.ts
 export interface HistoricalEntry {
-    author: string;
-    text: string;
-    quote: string;
-  }
-  
-  export const historicalData: HistoricalEntry[] = [
-    {
-      author: "Jordanes",
-      text: "Getica",
-      quote: "Beyond the Akacires … above the Pontus coast are the dwellings of the Bulgars..."
-    },
-    // Add more entries here
-  ];
-  
+  author: string;
+  text: string;
+  quote: string;
+  /** URL or path to an image for this entry */
+  imageUrl?: string;
+}
+
+export const historicalData: HistoricalEntry[] = [
+  {
+    author: `Anonymous - Chronograph of 354 - “Ziezi, ex quo Vulgares.”`,
+    text: `Date: 354 AD. The Chronograph of 354 (also called the Calendar of 354) was compiled in the mid-4th century (354 CE) in Rome. It contains an early ethnographic list wherein “Ziezi, of whom (are) the Bulgars” is mentioned as a descendant of Noah’s son Japheth en.wikipedia.org
+    This brief entry is considered the first known reference to the Bulgars. 
+    Context: This reference occurs in a section often called the Liber Generationis (Book of Generations), a list of peoples descending from Noah. “Ziezi ex quo Vulgares” suggests the Bulgars were thought (by this 4th-century compiler or a later copyist) to descend from a figure named Ziezi (tertullian.org)
+    It’s a very obscure ethnographic note, highlighting that by the mid-4th century the name “Bulgares” (Bulgars) was known, albeit mythologized in biblical genealogy.`,
+    quote: `Ziezi, ex quo Vulgares.`,
+  },
+  {
+    author: `Movses Khorenatsi - History of Armenia`,
+    text: `Date: 5th century AD (traditionally). The History of the Armenians attributed to Movses Khorenatsi (Moses of Khoren) is thought to have been written in the late 5th century (circa 480s AD), though some scholars suggest a later date. Context: Movses recounts two early migrations of Bulgars. In one episode, during the reign of an Armenian King Arshak (Arsaces I of Armenia, also known as Arsaces I, Arshak I and Arsak (ruled 35 AD)[1] was a Parthian prince who was king of Armenia during 35 AD.), “great disturbances occurred in the range of the great Caucasus Mountains, in the land of the Bulgars, many of whom migrated and came to our lands and settled south of Kokh”. Movses places this under the 2nd century BC...`,
+    quote: `...great disturbances occurred in the range of the great Caucasus Mountains, in the land of the Bulgars, many of whom migrated and came to our lands and settled south of Kokh.`,
+  },
+  {
+    author: `Jordanes - Getica (The Origin and Deeds of the Goths)`,
+    text: `Date: 551 AD. Jordanes, a 6th-century Roman bureaucrat of Gothic descent, wrote Getica around AD 551 as a summary of Gothic history (partly after Cassiodorus). In it, he also described various peoples of the Black Sea steppes in the mid-6th century. Context: Jordanes mentions the “Bulgars” in a list of peoples living in the region of the Black Sea, specifically in the area of the Don River. He describes them as a people who were “fierce and warlike” and who had a reputation for being skilled horsemen. This description aligns with later historical accounts of the Bulgars as a nomadic warrior culture. Context: Jordanes situates the Bulgari in the lands north of the Black Sea. He notes that “above the Pontus (Black Sea) coast, beyond the Akatziri,” live the Bulgar people. The Akatziri were a Hunnic tribe, so Jordanes is effectively saying the Bulgars inhabit the steppe north of the Black Sea, in the region of today’s Ukraine, beyond those Hunnic tribes. He remarks that the Bulgars have become well-known “whom the evils of our sins have made famous,” linking their rise to the scourge of God theme. In Jordanes’ account, the Bulgars are one of the nations in the collapsing Hunnic world: he mentions that the Hunni split into two tribes (Altziagiri and Saviri), and “the Bulgari” occupy parts of the former Hunnic realm near the Black Sea. This reference highlights the Bulgars’ presence in the Pontic steppe by the mid-6th century, soon after Attila’s empire, indicating they were a significant force in that region. See image: A 7th-century Bulgar gold chalice (from the Pereshchepina Treasure). This gilded cup, found in Ukraine, belonged to the Bulgar khan Kubrat. It illustrates the wealth of the Bulgar elite in the centurys after Jordanes wrote his account. The cup is decorated with intricate designs and is a testament to the craftsmanship of the time. It is now housed in the Hermitage Museum in St. Petersburg, Russia.`,
+    quote: `Beyond the Akacires … above the Pontus (Black Sea) coast are the dwellings of the Bulgars, who became famous because of the bad consequences of our sins.`,
+    imageUrl: `../assets/images/BulgarGoldChalice.png`,
+  },
+  {
+    author: `Pseudo-Zacharias Rhetor - Ecclesiastical History`,
+    text: `Date: c. 555 AD. An anonymous Syriac chronicler of the mid-6th century, conventionally called Pseudo-Zacharias Rhetor, wrote a Chronicle (continuing Zacharias of Mytilene’s work) around the 550s AD. It was later translated into Syriac and is a key source on peoples north of Persia and Byzantium. Context: In describing the steppe lands beyond the Caucasus, the Syriac author enumerates nomadic peoples and then notes: “The land Bazgun... extends up to the Caspian Gates... Beyond the gates live the Burgars (Bulgars), who have their own language, and are a pagan barbarian people. They have towns. And the Alans – they have five towns.”. This passage places the Bulgars geographically north of the Caspian Gate (Derbent) in the Caucasus–Pontic steppe, living adjacent to the Alans. Notably, it remarks that the Bulgars have towns (settlements), implying a semi-sedentary culture. Pseudo-Zacharias’s account (mid-6th c.) thus confirms the Bulgars’ presence on the steppe north of the Caucasus and their distinction as a pagan, non-Iranic speaking people. It’s one of the earliest descriptions of the Bulgar way of life, roughly contemporaneous with Jordanes. (His list of “thirteen peoples” of the steppe also includes tribes like Avnagur/Onogur, Sabir, etc., illustrating the Bulgars as part of this Hunnic-Turkic world.) Ecclesiastical History`,
+    quote: `Beyond the gates live the Burgars (Bulgars), who have their own language, and are a people pagan and barbarian. They have towns.`,
+  },
+  {
+    author: `Magnus Felix Ennodius – Panegyricus Dictus Constantino`,
+    text: `Date: c. 506–508 AD. Ennodius, a Latin rhetorician and bishop of Pavia, delivered this Panegyric “addressed to [the Emperor] Constantine” in the early 6th century (likely AD 506). Ennodius was active in the Ostrogothic Kingdom of Italy and known to compose laudatory speeches for political figures. (He also wrote a panegyric for King Theodoric in 507.)Context: This quote comes from a now fragmentary panegyric in which Ennodius praises a Roman official. The phrase “Bulgarorum invicta in bello gens” – “the Bulgars (are) a people unbeaten in war” – reveals the reputation the Bulgars had by around 500 AD. At this time, Bulgars were active around the Black Sea and Danube frontier of the Eastern Empire. In fact, Ennodius’s era saw Bulgars fighting as mercenaries and adversaries in the Balkans. In 480 the Bulgars aided Emperor Zeno against the Ostrogoths, and by 493–499 Bulgars were raiding Thrace and Dacia, defeating Roman armies. Ennodius elsewhere equates Bulgars with Huns – he calls a captured Bulgar horse an “Hunnic horse” ( equum Hunniscum ). His laudatory comment suggests that to Roman eyes the Bulgar warriors were formidable – essentially “invincible in war.” It underscores the rising military prominence of the Bulgars on the Danubian frontier in the late 5th – early 6th century. (Ennodius wrote this panegyric during the reign of Theodoric but addressing a figure named Constantine – possibly the consul Flavius Constantine in 507 – celebrating Roman victories where Bulgar mercenaries may have been involved.) Panegyricus Dictus Constantino`,
+    quote: `Bulgarorum invicta in bello gens. (Latin: “the Bulgars, a people unbeaten in war”)`,
+  },
+  {
+    author: `Paulus Diaconus – Historia Langobardorum`,
+    text: `Date: late 8th century (c. 787–796 AD). Paul the Deacon, a Lombard monk, composed the History of the Lombards in the 790s (after 787 and by 796). It is a retrospective history of the Lombard people from their origins to the mid-8th century. Context: Paul recounts an event during the Lombards’ migration into Italy (late 6th century) involving the Bulgars. According to the Historia Langobardorum, after the Lombards under King Alboin allied with the Avars to destroy the Gepids (567 AD), they began migrating to Italy in 568. In the power vacuum left in Pannonia, a band of Bulgars attacked: “Suddenly the Bulgarians, rushing upon them, slew many (of the stragglers)”. This ambush occurred as a portion of Lombards lagged behind during the trek. The Lombards had left their old lands to the Avars, but some groups (or allies) evidently fell victim to a Bulgar raid en.wikipedia.org Paul’s mention shows the Bulgars were active in the Danube-Carpathian region in the late 6th century, as a distinct force harrying the fringes of the Lombard migration. It also reflects that by Paul’s time (8th c.), the memory of Bulgars in those events was strong – notably, the Lombards saw Bulgars (not just Avars) as fierce enemies. This foreshadows the Bulgars’ later significance in the Balkans (by Paul’s own day, the Bulgarian state was established on the Danube). Historia Langobardorum`,
+    quote: `Suddenly the Bulgarians, rushing upon them, slew many, wounded many more and so raged through their camp that they killed Agelmund, the king himself, and carried away in captivity his only daughter. To avenge the slaughter of Agelmund… [he] turned his arms against the Bulgarians.`,
+  },
+  {
+    author: `Theophanes the Confessor – Chronographia`,
+    text: `Date: c. 810–815 AD. The Byzantine monk Theophanes wrote his Chronographia in the early 9th century (between 810 and 815 AD). It’s a year-by-year chronicle of events from biblical times up to AD 813, continuing the work of George Syncellus. Context: In recording mid-7th century events, Theophanes prefaces the story of Kubrat (founder of Great Bulgaria) by stating: “It is necessary to mention the past of the Unogundurs-Bulgars and the Kotrags… groznijat.tripod.com He then describes the geography of Old Great Bulgaria: the great rivers of that region (Volga and Don) and how the Bulgar people (Unogundur-Bulgars) lived between the Black Sea (Pontus Euxine) and the Caucasus (Meotian lake) groznijat.tripod.com Theophanes (writing ~150 years after the fact) goes on to tell how Kubrat of the Unogundurs-Bulgars revolted from the Avars and founded “Old Great Bulgaria” (around the 630s AD). His chronicle preserves crucial details: the Bulgars are called Unogundur (Onoğundur), suggesting the Onoğur tribal union, and he links the Bulgars and Kotragir Huns as kindred tribes. The line quoted shows Theophanes deliberately pausing his narrative in the year 629 to recount Bulgar pre-history before proceeding. This indicates that by the early 9th century the Byzantines had compiled a coherent story of Bulgar origins – tracing the Bulgar state back to Kubrat and placing the Bulgars in the Eurasian steppe context. Theophanes’ account (together with the parallel account of Patriarch Nikephoros) is a key source on how the Bulgar steppe empire formed and later fragmented under Khazar pressure groznijat.tripod.com It demonstrates Byzantine awareness of the Bulgars’ “past” as a distinct people long before they settled in the Balkans. Chronographia`,
+    quote: `It is necessary to mention the past of the Unogundurs-Bulgars and the Kotrags. In the northern parts of the Euxine Sea… flows an enormous river called Atel (Volga)… the river called Tanais (Don)… empties into it. According to Theophanes, the Bulgars subjugated the so-called Seven Slavic tribes.`,
+  },
+];
