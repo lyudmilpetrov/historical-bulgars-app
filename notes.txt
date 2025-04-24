@@ -1,0 +1,5 @@
+1) npm create vite@latest historical-bulgars-app -- --template react-ts
+2) cd historical-bulgars-app
+3) npm install
+4) npm install -D tailwindcss postcss autoprefixer
+5) npx tailwindcss init -p
