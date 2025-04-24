@@ -3,3 +3,43 @@
 3) npm install
 4) npm install -D tailwindcss postcss autoprefixer
 5) npx tailwindcss init -p
+
+
+Setup Deployment to GitHub Pages
+Install gh-pages
+npm install -D gh-pages
+Modify vite.config.ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: "/historical-bulgars-app/", // repo-name on GitHub
+})
+
+Update your package.json
+
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://<your-github-username>.github.io/historical-bulgars-app"
+}
+
+
+Deploy to GitHub Pages
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin git@github.com:<your-github-username>/historical-bulgars-app.git
+git branch -M main
+git push -u origin main
+
+
+Then deploy:
+
+npm run build
+npm run deploy
