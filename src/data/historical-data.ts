@@ -14,7 +14,7 @@ export const historicalData: HistoricalEntry[] = [
     This brief entry is considered the first known reference to the Bulgars. 
     Context: This reference occurs in a section often called the Liber Generationis (Book of Generations), a list of peoples descending from Noah. “Ziezi ex quo Vulgares” suggests the Bulgars were thought (by this 4th-century compiler or a later copyist) to descend from a figure named Ziezi (tertullian.org)
     It’s a very obscure ethnographic note, highlighting that by the mid-4th century the name “Bulgares” (Bulgars) was known, albeit mythologized in biblical genealogy.`,
-    quote: `Ziezi, ex quo Vulgares.`,
+    quote: `Ziezi, ex quo Vulgares (“Ziezi, of whom (are) the Bulgars”)`,
   },
   {
     author: `Movses Khorenatsi - History of Armenia`,
@@ -22,10 +22,15 @@ export const historicalData: HistoricalEntry[] = [
     quote: `...great disturbances occurred in the range of the great Caucasus Mountains, in the land of the Bulgars, many of whom migrated and came to our lands and settled south of Kokh.`,
   },
   {
+    author: ` John Malalas - Chronographia (often called the “Chronicle” of Malalas)`,
+    text: `Date: c. 491-578 AD. (Book V of 18 books is almost entirely devoted to the Trojan War) Malalas thus preserves a Byzantine tradition that the legendary Myrmidons—Achilles’ fierce Thessalian followers in Homer’s Iliad—were identified in later memory with the Bulgars. This is one of the earliest medieval testimonies linking the classical Myrmidons to the Bulgar people.`,
+    quote: `Achilles went with the Atreidai, having his own army with him, called Myrmidons then but now called Bulgars, three thousand, with Patrocles the camp-commander (stratopedarches) and Nestor.`,
+  },
+  {
     author: `Jordanes - Getica (The Origin and Deeds of the Goths)`,
     text: `Date: 551 AD. Jordanes, a 6th-century Roman bureaucrat of Gothic descent, wrote Getica around AD 551 as a summary of Gothic history (partly after Cassiodorus). In it, he also described various peoples of the Black Sea steppes in the mid-6th century. Context: Jordanes mentions the “Bulgars” in a list of peoples living in the region of the Black Sea, specifically in the area of the Don River. He describes them as a people who were “fierce and warlike” and who had a reputation for being skilled horsemen. This description aligns with later historical accounts of the Bulgars as a nomadic warrior culture. Context: Jordanes situates the Bulgari in the lands north of the Black Sea. He notes that “above the Pontus (Black Sea) coast, beyond the Akatziri,” live the Bulgar people. The Akatziri were a Hunnic tribe, so Jordanes is effectively saying the Bulgars inhabit the steppe north of the Black Sea, in the region of today’s Ukraine, beyond those Hunnic tribes. He remarks that the Bulgars have become well-known “whom the evils of our sins have made famous,” linking their rise to the scourge of God theme. In Jordanes’ account, the Bulgars are one of the nations in the collapsing Hunnic world: he mentions that the Hunni split into two tribes (Altziagiri and Saviri), and “the Bulgari” occupy parts of the former Hunnic realm near the Black Sea. This reference highlights the Bulgars’ presence in the Pontic steppe by the mid-6th century, soon after Attila’s empire, indicating they were a significant force in that region. See image: A 7th-century Bulgar gold chalice (from the Pereshchepina Treasure). This gilded cup, found in Ukraine, belonged to the Bulgar khan Kubrat. It illustrates the wealth of the Bulgar elite in the centurys after Jordanes wrote his account. The cup is decorated with intricate designs and is a testament to the craftsmanship of the time. It is now housed in the Hermitage Museum in St. Petersburg, Russia.`,
     quote: `Beyond the Akacires … above the Pontus (Black Sea) coast are the dwellings of the Bulgars, who became famous because of the bad consequences of our sins.`,
-    imageUrl: `../assets/images/BulgarGoldChalice.png`,
+    imageUrl: `./images/BulgarGoldChalice.png`,
   },
   {
     author: `Pseudo-Zacharias Rhetor - Ecclesiastical History`,

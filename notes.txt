@@ -1,3 +1,6 @@
+npm run build
+npm run deploy
+
 1) npm create vite@latest historical-bulgars-app -- --template react-ts
 2) cd historical-bulgars-app
 3) npm install

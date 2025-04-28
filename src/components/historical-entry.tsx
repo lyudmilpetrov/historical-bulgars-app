@@ -1,6 +1,6 @@
 // src/components/HistoricalEntry.tsx
-import React from 'react';
-import { HistoricalEntry } from '../data/historical-data';
+import React from "react";
+import { HistoricalEntry } from "../data/historical-data";
 
 interface Props {
   entry: HistoricalEntry;
@@ -11,8 +11,8 @@ const HistoricalEntryComponent: React.FC<Props> = ({ entry }) => (
     {/* Text block */}
     <div className="flex-1 pr-4">
       <h2 className="text-xl font-bold">{entry.author}</h2>
-      <h3 className="italic text-gray-600">{entry.text}</h3>
-      <p className="mt-2 text-gray-700">{entry.quote}</p>
+      <p className="text-gray-600">{entry.text}</p>
+      <h3 className="italic text-gray-700 font-bold">{entry.quote}</h3>
     </div>
 
     {/* Image block (only if imageUrl is provided) */}
